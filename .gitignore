@@ -1,7 +1,8 @@
 # Node.js
 node_modules/
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Dependency directories
 /.pnp
@@ -20,12 +21,22 @@ yarn-error.log
 *.sublime-workspace
 
 # Logs
-logs
+logs/
 *.log
+*.log.*
 
 # Build output
 /dist
 /build
+.next/
+out/
+
+# Temporary files
+*.tmp
+*.swp
+*.pid
+*.seed
+*.pid.lock
 
 # Environment variables
 .env
@@ -36,6 +47,7 @@ logs
 
 # Testing
 /coverage
+/karma-coverage/
 
 # Editor directories and files
 .editorconfig
@@ -45,5 +57,19 @@ logs
 .prettierignore
 .prettierrc
 
-# code-alt's extensions
+# Parcel cache
+.parcel-cache/
+
+# Code history extensions
 .history/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*.~lock.*
